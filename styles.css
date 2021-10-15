@@ -2,12 +2,17 @@
     font-family: 'Mulish', sans-serif;
 }
 
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+
+
   p {
     margin: 0;
   }
   
   header {
-    margin-bottom: 100px;
+    padding-bottom: 200px;
   }
   
   .header-background{ 
@@ -25,16 +30,15 @@
 
     /* SECTION-WELCOME */
 
-  .section-welcome {
-    margin-top: 177px;
-    margin-bottom: 200px;
+  .section__welcome {
+    padding-bottom: 200px;
   }
 
-  .welcome-decor {
+  .section__welcome-decor {
     position: relative;
   }
 
-  .welcome-decor::before {
+  .section__welcome-decor::before {
     content: url('./imgs/decor/decor-element.svg');
     position: absolute;
     left: -110px;
@@ -60,18 +64,14 @@
     width: 100%;
   }
   
-  .welcome-content {
-    padding-top: 177px;
-    position: relative;
-  }
 
   .welcome-title {
     font-weight: bold;
     font-size: 48px;
-    line-height: 56px;
+    margin-bottom: 25px;
   }
   .welcome-description {
-    margin: 25px 0px 45px 0px;
+    margin-bottom: 45px;
     font-weight: 300;
     font-size: 21px;
     color: #7D7987;
@@ -79,93 +79,69 @@
 
     /* SECTION-SERVICES */
 
-  .section-services {
-    margin-top: 177px;
-    margin-bottom: 200px;
+  .section__services {
+    padding-bottom: 200px;
   }
 
-  .services-text{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .services-title{
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 56px;
-    color: #000000;
-    margin: 0;
-  }
 
-  .services-description{
+  .services-description {
     font-weight: 300;
     font-size: 18px;
     line-height: 30px;
     text-align: center;
     color: #7D7987;
   }
-  .services-card__background{
-    position: absolute;
-    z-index: -1;
-    top: -250px;
-    left: -400px;
-  }
-  .services-list{
+
+  .services-list {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 34px;
   }
-  .services-list__margin{
+  .services-list--margin{
     margin: 80px 50px 70px 50px;
   }
-  .services-item{
+  .services-item {
     background: #FFFFFF;
     box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
     border-radius: 20px;
     padding: 62px 45px 47px;
   }
-  .services-item_top{
+  .services-item--top {
     height: 100px;
     display: flex;
     align-items: center;
+    margin-bottom: 25px;
   }
-  .services-item_body{
-    padding: 166px 0 0 37px;
-    position: relative;
-  }
-  .services-item_title {
+
+  .services-item--title {
+    margin-bottom: 20px;
     font-weight: bold;
     font-size: 24px;
-    line-height: 56px;
     color: #000000;
   }
-  .services-item_text{
+
+  
+  .services-item--text{
     font-weight: 300;
     font-size: 16px;
     line-height: 28px;
     color: #7D7987;
   }
-  .services-btn__wrapper{
-    text-align: center;
-  }
 
-
-  .services-bg-content{
+  .section__services-decor {
     position: relative;
   }
-  .services-bg-content::before{
-    content: url('./img/bg-services-2.svg');
+  .section__services-decor::before{
+    content: url('./imgs/decor/decor-element.svg');
     position: absolute;
     right: 14px;
     top: 687px;
     z-index: -1;
   }
-  .services-bg-content::after{
-    content: url('./img/bg-services.svg');
+  .section__services-decor::after{
+    content: url('./imgs/services-section/services-decor-element.svg');
     position: absolute;
-    left: -505px;
+    left: -55px;
     top: 150px;
     z-index: -1;
   }
@@ -187,6 +163,10 @@
     position: relative;
     padding-bottom: 20px;
     margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 56px;
+    color: #000000;
   }
 
   .section__heading-title:after {
@@ -206,7 +186,40 @@
     background: #FFFFFF;
   }
 
-  .section__heading-description {
-    margin-top: 20px;
-    margin-bottom: 0px;
+      /* SECTION-INFO */
+
+   
+  
+  .section__info {
+    padding-bottom: 200px;
   }
+
+  .section__info-decor {
+    position: relative;
+  }
+  .info-description {
+    font-weight: 300;
+    font-size: 18px;
+    color: #7D7987;
+    margin-bottom: 40px;
+  }
+
+  .section__info-decor::before {
+    content: url(./imgs/decor/decor-element.svg);
+    position: absolute;
+    right: -50px;
+    top: 520px;
+  }
+
+  .btn-m-arrow {
+    margin-left: 14px;
+  }
+  .btn:hover .arrow-style-hover {
+    fill: #ffffff;
+    transition-duration: 0.2s;
+  }
+  .info-mb {
+    margin-bottom: 229px;
+  }
+
+  
