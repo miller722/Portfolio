@@ -59,7 +59,7 @@
   }
 
   .section__welcome-decor::before {
-    content: url('./imgs/decor/decor-element.svg');
+    content: url('./img/decor/decor-element.svg');
     position: absolute;
     left: -110px;
     top: 149px;
@@ -147,14 +147,14 @@
     position: relative;
   }
   .section-services_decor::before{
-    content: url('./imgs/decor/decor-element.svg');
+    content: url('./img/decor/decor-element.svg');
     position: absolute;
     right: 14px;
     top: 687px;
     z-index: -1;
   }
   .section-services_decor::after{
-    content: url('./imgs/services-section/services-decor-element.svg');
+    content: url('./img/services-section/services-decor-element.svg');
     position: absolute;
     left: -55px;
     top: 150px;
@@ -220,7 +220,7 @@
   }
 
   .section-info_decor::after {
-    content: url(./imgs/decor/decor-element.svg);
+    content: url(./img/decor/decor-element.svg);
     position: absolute;
     right: -50px;
     top: 520px;
@@ -246,13 +246,13 @@
 
   
   .section-testimonials__decor::before{
-    content: url(./imgs/decor/decor-element.svg);
+    content: url(./img/decor/decor-element.svg);
     position: absolute;
     right: -50px;
     top: -15px;
   }
   .section-testimonials__decor::after {
-    content: url(./imgs/decor/decor-element.svg);
+    content: url(./img/decor/decor-element.svg);
     position: absolute;
     left: -53px;
     bottom: 25px;
