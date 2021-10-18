@@ -1,0 +1,40 @@
+.services{
+  &-list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 34px;
+    margin: 80px 50px 0 50px;
+  }
+  &-item{
+    background: #FFFFFF;
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+    border-radius: 20px;
+    padding: 62px 45px 47px;
+    &__logo-card {
+      height: 100px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px;
+    }
+    &__heading{
+      margin-bottom: 20px;
+      &-title{
+        font-weight: bold;
+        font-size: 24px;
+        color: #000000;
+      }
+    }
+    &__description{
+      &-text{
+        font-weight: 300;
+        font-size: 16px;
+        color: #7D7987;
+      }
+    }
+  }
+}
+
+
+
+
+
