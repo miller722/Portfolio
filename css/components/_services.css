@@ -1,0 +1,31 @@
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 34px;
+  margin: 80px 50px 0 50px;
+}
+.services-item {
+  background: #FFFFFF;
+  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+  border-radius: 20px;
+  padding: 62px 45px 47px;
+}
+.services-item__logo-card {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.services-item__heading {
+  margin-bottom: 20px;
+}
+.services-item__heading-title {
+  font-weight: bold;
+  font-size: 24px;
+  color: #000000;
+}
+.services-item__description-text {
+  font-weight: 300;
+  font-size: 16px;
+  color: #7D7987;
+}
