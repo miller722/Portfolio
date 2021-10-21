@@ -1,0 +1,50 @@
+/* TESTIMONIALS */
+
+.testimonials{
+  &-inner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 66px;
+    &__comment-box{
+      display: flex;
+      align-items: center;
+    }
+    &__comment-text{
+      font-size: 19px;
+      color: rgba(255, 255, 255, 0.9);
+    }
+  }
+  &-user{
+    display: flex;
+    align-items: center;
+    &__box-photo{
+      width: 141px;
+      height: 141px;
+      border-radius: 50%;
+      border: 4px solid $white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      &.img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  &-data {
+    padding-left: 30px;
+    &__name {
+      font-size: 22px;
+      font-weight: bold;
+      color: $white;
+    }
+    &__position {
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.9);
+    }
+  }
+}
+
+

@@ -1,0 +1,33 @@
+    // button
+
+ .btn{
+    border-radius: 55px;
+    font-weight: bold;
+    font-size: 18px;
+    min-height: 56px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    &_primary{
+      background-color: #458FF6;
+    }
+    &_w_md{
+      max-width: 200px;
+      width: 100%;
+    }
+    &-m-arrow{
+      margin-right: 14px;
+    }
+    & svg{
+      width: 12px;
+        &:hover{
+          fill: $white;
+          transition-duration: 0.2s;
+        }
+    }
+ }
+
+  // class="vector-hover"
+    
