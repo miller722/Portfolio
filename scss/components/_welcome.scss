@@ -1,24 +1,19 @@
 /* SECTION-WELCOME */
 
-.invite-welcome{
-    &__header{
-        margin-bottom: 25px;
-        &-title{
-            font-weight: bold;
-            font-size: 48px; 
-        }
+.invite-welcome {
+  &__header {
+    margin-bottom: 25px;
+    &-title {
+      font-weight: bold;
+      font-size: 48px;
     }
-    &__body{
-        margin-bottom: 45px;
-        &-description{
-            color: #7D7987;
-            font-size: 21px;
-            font-weight: 300;
-        }
-   }
+  }
+  &__body {
+    margin-bottom: 45px;
+    &-description {
+      color: #7d7987;
+      font-size: 21px;
+      font-weight: 300;
+    }
+  }
 }
-
-
-
-  
-  
