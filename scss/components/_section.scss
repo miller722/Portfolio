@@ -1,5 +1,9 @@
 .section {
   &-welcome {
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+    overflow: hidden;
     padding-bottom: 200px;
     &__decor {
       position: relative;
@@ -9,10 +13,14 @@
         left: -110px;
         top: 149px;
         pointer-events: none;
+        @media (max-width: 768px) {
+          display: none;
+        }
       }
     }
   }
   &-services {
+    overflow: hidden;
     padding-bottom: 200px;
     &__decor {
       position: relative;
@@ -23,6 +31,9 @@
         top: 687px;
         z-index: -1;
         pointer-events: none;
+        @media (max-width: 768px) {
+          display: none;
+        }
       }
       &::after {
         content: url("/img/services-section/section-services-bg.png");
@@ -31,10 +42,14 @@
         top: 150px;
         z-index: -1;
         pointer-events: none;
+        @media (max-width: 768px) {
+          display: none;
+        }
       }
     }
   }
   &-info {
+    overflow: hidden;
     padding-bottom: 229px;
     &__decor {
       position: relative;
@@ -44,21 +59,39 @@
         right: -50px;
         top: 520px;
         pointer-events: none;
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+    }
+    &__inner {
+      @media (max-width: 768px) {
+        padding: 100px 50px;
       }
     }
   }
   &-testimonials {
+    overflow: hidden;
     padding-bottom: 200px;
     &__decor {
       background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
       border-radius: 24px;
       position: relative;
       padding: 65px 118px 80px;
+      @media (max-width: 1024px) {
+        padding: 50px;
+      }
+      @media (max-width: 425px) {
+        padding: 50px;
+      }
       &::before {
         content: url(./img/decor/decor-element.svg);
         position: absolute;
         right: -50px;
         top: -15px;
+        @media (max-width: 768px) {
+          display: none;
+        }
       }
       &::after {
         content: url(./img/decor/decor-element.svg);
@@ -67,6 +100,9 @@
         bottom: 25px;
         z-index: -1;
         pointer-events: none;
+        @media (max-width: 768px) {
+          display: none;
+        }
       }
     }
   }
@@ -81,6 +117,9 @@
       font-weight: bold;
       font-size: 36px;
       color: #000000;
+      @media (max-width: 425px) {
+        font-size: 18px;
+       }
       &:after {
         content: "";
         display: block;
@@ -103,6 +142,9 @@
         font-weight: bold;
         font-size: 36px;
         color: $white;
+        @media (max-width: 425px) {
+          font-size: 18px;
+         }
         &:after {
           content: "";
           display: block;
@@ -125,12 +167,18 @@
       font-weight: 300;
       font-size: 18px;
       color: #7d7987;
+      @media (max-width: 425px) {
+        font-size: 14px;
+       }
       &_center {
         font-weight: 300;
         font-size: 18px;
         line-height: 30px;
         text-align: center;
         color: #7d7987;
+        @media (max-width: 425px) {
+          font-size: 14px;
+         }
       }
     }
   }
@@ -146,6 +194,9 @@
         top: 6px;
         z-index: -1;
         pointer-events: none;
+        @media (max-width: 768px) {
+          display: none;
+        }
       }
       &::after {
         content: url("/img/decor/decor-element-large.png");
@@ -154,6 +205,9 @@
         top: 100px;
         z-index: -1;
         pointer-events: none;
+        @media (max-width: 768px) {
+          display: none;
+        }
       }
     }
   }

@@ -1,6 +1,9 @@
 /* SECTION-WELCOME */
 
 .invite-welcome {
+  @media (max-width: 768px) {
+    text-align: center;
+  }
   &__header {
     margin-bottom: 25px;
     &-title {
