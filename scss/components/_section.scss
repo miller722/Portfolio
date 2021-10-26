@@ -1,10 +1,14 @@
 .section {
   &-welcome {
-    @media (max-width: 768px) {
-      text-align: center;
-    }
     overflow: hidden;
     padding-bottom: 200px;
+    @media (max-width: 768px) {
+      text-align: center;
+
+    }
+    @media (max-width: 425px) {
+      padding-bottom: 50px;
+    }
     &__decor {
       position: relative;
       &::before {
@@ -22,6 +26,9 @@
   &-services {
     overflow: hidden;
     padding-bottom: 200px;
+    @media (max-width: 425px) {
+      padding-bottom: 50px;
+    }
     &__decor {
       position: relative;
       &::before {
@@ -51,6 +58,20 @@
   &-info {
     overflow: hidden;
     padding-bottom: 229px;
+    @media (max-width: 768px) {
+      padding-bottom: 0px;
+    }
+    @media (max-width: 425px) {
+      padding-bottom: 50px;
+    }
+    &_reverse {
+      display: flex;
+      flex-direction: row;
+      @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
     &__decor {
       position: relative;
       &::after {
@@ -68,11 +89,17 @@
       @media (max-width: 768px) {
         padding: 100px 50px;
       }
+      @media (max-width: 425px) {
+        padding: 50px;
+      }
     }
   }
   &-testimonials {
     overflow: hidden;
     padding-bottom: 200px;
+    @media (max-width: 425px) {
+      padding-bottom: 50px;
+    }
     &__decor {
       background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
       border-radius: 24px;
@@ -82,7 +109,7 @@
         padding: 50px;
       }
       @media (max-width: 425px) {
-        padding: 50px;
+        padding: 20px;
       }
       &::before {
         content: url(./img/decor/decor-element.svg);
@@ -185,6 +212,9 @@
   &-article{
     overflow: hidden;
     padding-bottom: 200px;
+    @media (max-width: 425px) {
+      padding-bottom: 50px;
+    }
     &__decor {
       position: relative;
       &::before {
