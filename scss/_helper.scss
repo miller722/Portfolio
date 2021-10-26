@@ -1,0 +1,10 @@
+.mb-sm {
+  margin-bottom: 70px;
+  @media (max-width: 425px) {
+      margin-bottom: 0;
+    }
+}
+
+.ml-xsm {
+  margin-left: 8px;
+}

@@ -1,16 +1,13 @@
 @import './variables';
-
-
+@import './helper';
+@import './global';
 
 // Components
-
 @import './components/button';
 @import './components/header';
 @import './components/footer';
 @import './components/services';
-@import './components/global';
 @import './components/section';
 @import './components/testimonials';
 @import './components/welcome';
-@import './components/marginAndPadding';
 @import './components/article';

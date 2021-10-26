@@ -136,6 +136,10 @@
   &-heading {
     &_center {
       text-align: center;
+      & .section-heading__title:after {
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
     &__title {
       position: relative;
@@ -243,7 +247,3 @@
   }
 }
 
-.section-heading_center .section-heading__title:after {
-  margin-left: auto;
-  margin-right: auto;
-}
