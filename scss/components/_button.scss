@@ -11,6 +11,10 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 425px) {
+      min-height: 46px;
+      max-width: 150px;
+    }
     &_primary{
       background-color: #458FF6;
     }

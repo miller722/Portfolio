@@ -2,12 +2,14 @@
   &-welcome {
     overflow: hidden;
     padding-bottom: 200px;
+    padding-top: 200px;
+   
     @media (max-width: 768px) {
       text-align: center;
-
     }
     @media (max-width: 425px) {
       padding-bottom: 50px;
+      padding-top: 50px;
     }
     &__decor {
       position: relative;
@@ -133,6 +135,38 @@
       }
     }
   }
+  &-article{
+    overflow: hidden;
+    padding-bottom: 200px;
+    @media (max-width: 425px) {
+      padding-bottom: 50px;
+    }
+    &__decor {
+      position: relative;
+      &::before {
+        content: url("/img/decor/decor-article.png");
+        position: absolute;
+        right: -114px;
+        top: 6px;
+        z-index: -1;
+        pointer-events: none;
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+      &::after {
+        content: url("/img/decor/decor-element-large.png");
+        position: absolute;
+        left: -55px;
+        top: 100px;
+        z-index: -1;
+        pointer-events: none;
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+    }
+  }
   &-heading {
     &_center {
       text-align: center;
@@ -163,9 +197,6 @@
         left: 0px;
         right: 0px;
       }
-      // &_color-white:after{
-      //   background: #ffff;
-      // }
       &_color {
         position: relative;
         padding-bottom: 20px;
@@ -213,37 +244,10 @@
       }
     }
   }
-  &-article{
-    overflow: hidden;
-    padding-bottom: 200px;
-    @media (max-width: 425px) {
-      padding-bottom: 50px;
-    }
-    &__decor {
-      position: relative;
-      &::before {
-        content: url("/img/decor/decor-article.png");
-        position: absolute;
-        right: -114px;
-        top: 6px;
-        z-index: -1;
-        pointer-events: none;
-        @media (max-width: 768px) {
-          display: none;
-        }
-      }
-      &::after {
-        content: url("/img/decor/decor-element-large.png");
-        position: absolute;
-        left: -55px;
-        top: 100px;
-        z-index: -1;
-        pointer-events: none;
-        @media (max-width: 768px) {
-          display: none;
-        }
-      }
-    }
-  }
+}
+
+.section-heading_center .section-heading__title:after {
+  margin-left: auto;
+  margin-right: auto;
 }
 

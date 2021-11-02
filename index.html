@@ -15,13 +15,15 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
     <title>Portfolio</title>
   </head>
   <body>
-    <header class="header">
-      <nav
-        class="navbar navbar-expand-lg navbar-light fixed-top header-background"
-      >
+    <header class="header fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-light header-background">
         <div class="container">
           <a href=""><img src="./img/header/logo.svg" alt="" /></a>
           <button
@@ -38,19 +40,19 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link link-style" href="#">Home</a>
+                <a class="nav-link" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link link-style" href="#">Find a doctor</a>
+                <a class="nav-link" href="#">Find a doctor</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link link-style" href="#">Apps</a>
+                <a class="nav-link" href="#">Apps</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link link-style" href="#">Testimonials</a>
+                <a class="nav-link" href="#">Testimonials</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link link-style" href="#">About us</a>
+                <a class="nav-link" href="#">About us</a>
               </li>
             </ul>
           </div>
@@ -241,28 +243,32 @@
           <div class="section-info__decor">
             <div class="row">
               <div class="col-lg-7 col-md-12">
-                <img class="w-100" src="./img/info-section/info-section-1.png" alt="" />
+                <img
+                  class="w-100"
+                  src="./img/info-section/info-section-1.png"
+                  alt=""
+                />
               </div>
               <div class="my-auto offset-lg-1 col-lg-4 col-md-12">
-               <div class="section-info__inner">
-                <div class="section-heading">
-                  <h2 class="section-heading__title">
-                    Leading healthcare providers
-                  </h2>
+                <div class="section-info__inner">
+                  <div class="section-heading">
+                    <h2 class="section-heading__title">
+                      Leading healthcare providers
+                    </h2>
+                  </div>
+                  <div class="section-body">
+                    <p class="section-body__description">
+                      Trafalgar provides progressive, and affordable healthcare,
+                      accessible on mobile and online for everyone. To us, it’s
+                      not just work. We take pride in the solutions we deliver
+                    </p>
+                  </div>
+                  <div class="btn">
+                    <a class="btn btn-outline-primary btn-w-md" href=""
+                      >Learn more</a
+                    >
+                  </div>
                 </div>
-                <div class="section-body">
-                  <p class="section-body__description">
-                    Trafalgar provides progressive, and affordable healthcare,
-                    accessible on mobile and online for everyone. To us, it’s
-                    not just work. We take pride in the solutions we deliver
-                  </p>
-                </div>
-                <div class="btn">
-                  <a class="btn btn-outline-primary btn-w-md" href=""
-                    >Learn more</a
-                  >
-                </div>
-               </div>
               </div>
             </div>
           </div>
@@ -271,46 +277,55 @@
       <section class="section-info">
         <div class="container">
           <div class="row">
-           <div class="section-info_reverse">
-            <div class="my-auto offset-lg-1 col-lg-4 col-md-12">
-              <div class="section-info__inner">
-                <div class="section-heading">
-                  <h2 class="section-heading__title">Download our mobile apps</h2>
-                </div>
-                <div class="section-body">
-                  <p class="section-body__description">
-                    Our dedicated patient engagement app and web portal allow you
-                    to access information instantaneously (no tedeous form, long
-                    calls, or administrative hassle) and securely
-                  </p>
-                </div>
-                <div class="btn">
-                  <a class="btn btn-outline-primary btn-w-md" href=""
-                    ><span class="btn-m-arrow">Download</span>
-                    <svg
-                      viewBox="0 0 11 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M4.81951 1.05554L4.81951 12.6308L2.27646 10.0877C1.92569 9.73698 1.39954 9.73698 1.04878 10.0877C0.698014 10.4385 0.698014 10.9647 1.04878 11.3154L5.08258 15.3492C5.43335 15.7 5.95949 15.7 6.31026 15.3492L10.3441 11.3154C10.6948 10.9647 10.6948 10.4385 10.3441 10.0877C9.9933 9.73698 9.46715 9.73698 9.11638 10.0877L6.57333 12.6308L6.57333 1.05554C6.57333 0.617083 6.22257 0.178627 5.69642 0.178627C5.17027 0.178627 4.81951 0.617083 4.81951 1.05554Z"
-                        fill="#458FF6"
-                      />
-                    </svg>
-                  </a>
+            <div class="section-info_reverse">
+              <div class="my-auto offset-lg-1 col-lg-4 col-md-12">
+                <div class="section-info__inner">
+                  <div class="section-heading">
+                    <h2 class="section-heading__title">
+                      Download our mobile apps
+                    </h2>
+                  </div>
+                  <div class="section-body">
+                    <p class="section-body__description">
+                      Our dedicated patient engagement app and web portal allow
+                      you to access information instantaneously (no tedeous
+                      form, long calls, or administrative hassle) and securely
+                    </p>
+                  </div>
+                  <div class="btn">
+                    <a class="btn btn-outline-primary btn-w-md" href=""
+                      ><span class="btn-m-arrow">Download</span>
+                      <svg
+                        viewBox="0 0 11 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4.81951 1.05554L4.81951 12.6308L2.27646 10.0877C1.92569 9.73698 1.39954 9.73698 1.04878 10.0877C0.698014 10.4385 0.698014 10.9647 1.04878 11.3154L5.08258 15.3492C5.43335 15.7 5.95949 15.7 6.31026 15.3492L10.3441 11.3154C10.6948 10.9647 10.6948 10.4385 10.3441 10.0877C9.9933 9.73698 9.46715 9.73698 9.11638 10.0877L6.57333 12.6308L6.57333 1.05554C6.57333 0.617083 6.22257 0.178627 5.69642 0.178627C5.17027 0.178627 4.81951 0.617083 4.81951 1.05554Z"
+                          fill="#458FF6"
+                        />
+                      </svg>
+                    </a>
+                  </div>
                 </div>
               </div>
+              <div class="text-end offset-lg-1 col-lg-6 col-md-12">
+                <img
+                  class="w-100"
+                  src="./img/info-section/info-section-2.png"
+                  alt=""
+                />
+              </div>
             </div>
-            <div class="text-end offset-lg-1 col-lg-6 col-md-12">
-              <img class="w-100" src="./img/info-section/info-section-2.png" alt="" />
-            </div>
-           </div>
           </div>
         </div>
       </section>
       <section class="section-testimonials">
         <div class="container">
-          <div class="section-testimonials__decor">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+
+          <div class="section-testimonials__decor swiper-slide">
             <div class="section-heading section-heading_center">
               <h2 class="section-heading__title_color">
                 What our customer are saying
@@ -326,19 +341,61 @@
                 </div>
                 <div class="testimonials-data">
                   <p class="testimonials-data__name">Edward Newgate</p>
-                  <p class="testimonials-data__position">Founder Circle</p>
+                  <p class="testimonials-data__position">
+                    Founder Circle
+                  </p>
                 </div>
               </div>
               <div class="testimonials-inner__comment-box">
                 <p class="testimonials-inner__comment-text">
-                  “Our dedicated patient engagement app and web portal allow you
-                  to access information instantaneously (no tedeous form, long
-                  calls, or administrative hassle) and securely”
+                  “Our dedicated patient engagement app and web portal
+                  allow you to access information instantaneously (no
+                  tedeous form, long calls, or administrative hassle) and
+                  securely”
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="section-testimonials__decor swiper-slide">
+            <div class="section-heading section-heading_center">
+              <h2 class="section-heading__title_color">
+                What our customer are saying
+              </h2>
+            </div>
+            <div class="testimonials-inner">
+              <div class="testimonials-user">
+                <div class="testimonials-user__box-photo">
+                  <img
+                    src="./img/testimonials-section/testimonials-user__photo.png"
+                    alt=""
+                  />
+                </div>
+                <div class="testimonials-data">
+                  <p class="testimonials-data__name">Edward Newgate</p>
+                  <p class="testimonials-data__position">
+                    Founder Circle
+                  </p>
+                </div>
+              </div>
+              <div class="testimonials-inner__comment-box">
+                <p class="testimonials-inner__comment-text">
+                  “Our dedicated patient engagement app and web portal
+                  allow you to access information instantaneously (no
+                  tedeous form, long calls, or administrative hassle) and
+                  securely”
                 </p>
               </div>
             </div>
           </div>
         </div>
+       <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    
+
+      </div>  
+    </div>  
+
       </section>
       <section class="section-article">
         <div class="container">
@@ -372,7 +429,13 @@
                     </p>
                   </div>
                   <div class="article-item__link">
-                    <a href="#" class="">Read more <img vclass="ml-xsm" src="img/article-section/article-vector.svg" alt=""></a>
+                    <a href="#" class=""
+                      >Read more
+                      <img
+                        vclass="ml-xsm"
+                        src="img/article-section/article-vector.svg"
+                        alt=""
+                    /></a>
                   </div>
                 </div>
               </div>
@@ -396,9 +459,14 @@
                       of its very good for your health....
                     </p>
                   </div>
-                 <div class="article-item__link">
-                  <a href="#" class="">Read more<img class="ml-xsm" src="img/article-section/article-vector.svg" alt=""></a>
-                 </div>
+                  <div class="article-item__link">
+                    <a href="#" class=""
+                      >Read more<img
+                        class="ml-xsm"
+                        src="img/article-section/article-vector.svg"
+                        alt=""
+                    /></a>
+                  </div>
                 </div>
               </div>
               <div class="article-item">
@@ -422,7 +490,12 @@
                     </p>
                   </div>
                   <div class="article-item__link">
-                    <a href="#" class="">Read more<img class="ml-xsm" src="img/article-section/article-vector.svg" alt=""></a>
+                    <a href="#" class=""
+                      >Read more<img
+                        class="ml-xsm"
+                        src="img/article-section/article-vector.svg"
+                        alt=""
+                    /></a>
                   </div>
                 </div>
               </div>
@@ -440,20 +513,20 @@
           <div class="footer-info">
             <div class="footer-info__logo">
               <a href="">
-                <img src="img/footer/logo-footer.png" alt=""/>
+                <img src="img/footer/logo-footer.png" alt="" />
               </a>
             </div>
-           <div class="footer-info__description">
-            <p class="footer-info__description-text">
-              Trafalgar provides progressive, and affordable healthcare,
-              accessible on mobile and online for everyone
-            </p>
-           </div>
-           <div class="foter-info__copyright">
-            <p class="footer-info__copyright-text">
-              ©Trafalgar PTY LTD 2020. All rights reserved
-            </p>
-           </div>
+            <div class="footer-info__description">
+              <p class="footer-info__description-text">
+                Trafalgar provides progressive, and affordable healthcare,
+                accessible on mobile and online for everyone
+              </p>
+            </div>
+            <div class="foter-info__copyright">
+              <p class="footer-info__copyright-text">
+                ©Trafalgar PTY LTD 2020. All rights reserved
+              </p>
+            </div>
           </div>
           <div class="footer-menu">
             <div class="footer-item">
@@ -478,7 +551,9 @@
               <h5 class="footer-item__title">Help</h5>
               <ul class="footer-list">
                 <li><a class="footer-list__link" href="">Help center</a></li>
-                <li> <a class="footer-list__link" href="">Contact support</a></li>
+                <li>
+                  <a class="footer-list__link" href="">Contact support</a>
+                </li>
                 <li><a class="footer-list__link" href="">Instructions</a></li>
                 <li><a class="footer-list__link" href="">How it works</a></li>
               </ul>
@@ -492,5 +567,8 @@
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
