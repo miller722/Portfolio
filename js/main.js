@@ -30,20 +30,15 @@ const swiper = new Swiper(".testimonaials-swiper", {
 });
 
 $(document).ready(function () {
-  $("#menu").on("click", function (event) {
-    //отменяем стандартную обработку нажатия по ссылке
+  $("#menu").click(function (e) {
+    const idAnchor = $(e.target).attr('href')
+    e.preventDefault();
 
-    event.preventDefault();
+    const top = $(idAnchor).offset().top;
+    $("body,html").animate({
+      scrollTop: top - 100
+    }, 200);
 
-    //забираем идентификатор бока с атрибута href
-
-    var id = $(this).attr("href"),
-      //узнаем высоту от начала страницы до блока на который ссылается якорь
-
-      top = $("#article").offset().top;
-
-    //анимируем переход на расстояние - top за 1500 мс
-
-    $("body,html").animate({ scrollTop: top-100}, 200);
-  });
+  })
 });
+
