@@ -13,6 +13,7 @@
 
 .scroll {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: 2s;
 }
 
 body {
@@ -76,12 +77,18 @@ ul {
   transition-duration: 0.2s;
 }
 
+.header {
+  width: 100%;
+  position: fixed;
+  color: #fff;
+  z-index: 2;
+}
 .header-background {
   background-color: rgba(255, 255, 255, 0.979);
 }
 .header .navbar {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .header .nav-link:hover {
   text-shadow: 0 0 black;
@@ -722,7 +729,7 @@ ul {
   margin-bottom: 35px;
 }
 
-.swiper {
-  height: 400px;
+#article {
+  height: calc(100% - 70px);
 }
 /*# sourceMappingURL=styles.css.map */

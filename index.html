@@ -10,6 +10,7 @@
       integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./aos-master/dist/aos.css" />
     <link rel="stylesheet" href="styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap"
@@ -22,7 +23,7 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <header class="header fixed-top">
+    <header id="menu" class="header">
       <nav class="navbar navbar-expand-lg navbar-light header-background">
         <div class="container">
           <a href=""><img src="./img/header/logo.svg" alt="" /></a>
@@ -40,19 +41,19 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#welcome">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Find a doctor</a>
+                <a class="nav-link" href="#services">Find a doctor</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Apps</a>
+                <a class="nav-link" href="#info">Apps</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Testimonials</a>
+                <a class="nav-link" href="#testimonials">Testimonials</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About us</a>
+                <a class="nav-link" href="#article">About us</a>
               </li>
             </ul>
           </div>
@@ -65,9 +66,13 @@
           <div class="section-welcome__decor">
             <div class="row">
               <div class="col-lg-4 col-md-12 my-auto">
-                <div class="invite-welcome">
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="3000"
+                  class="invite-welcome"
+                >
                   <div class="invite-welcome__header">
-                    <h1 class="invite-welcome__header-title">
+                    <h1 id="welcome" class="invite-welcome__header-title">
                       Virtual healthcare for you
                     </h1>
                   </div>
@@ -86,6 +91,8 @@
               </div>
               <div class="col-lg-7 col-md-12 offset-lg-1">
                 <img
+                  data-aos="fade-left"
+                  data-aos-duration="3000"
                   class="w-100"
                   src="img/welcome-section/welcom-illustration.png"
                   alt=""
@@ -95,10 +102,14 @@
           </div>
         </div>
       </section>
-      <section class="section-services">
+      <section id="services" class="section-services">
         <div class="container">
           <div class="section-services__decor">
-            <div class="section-heading section-heading_center">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="3000"
+              class="section-heading section-heading_center"
+            >
               <div class="section-heading__title_center">
                 <h2 class="section-heading__title">Our services</h2>
               </div>
@@ -112,7 +123,12 @@
               </div>
             </div>
             <div class="services-list">
-              <div class="services-item">
+              <div
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1000"
+                class="services-item"
+              >
                 <div class="services-item__logo-card">
                   <img
                     src="./img/services-section/services-search.png"
@@ -131,7 +147,12 @@
                   </div>
                 </div>
               </div>
-              <div class="services-item">
+              <div
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+                class="services-item"
+              >
                 <div class="services-item__logo-card">
                   <img
                     src="./img/services-section/services-pharmacy.png"
@@ -152,7 +173,12 @@
                   </div>
                 </div>
               </div>
-              <div class="services-item">
+              <div
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="3000"
+                class="services-item"
+              >
                 <div class="services-item__logo-card">
                   <img
                     src="./img/services-section/services-consultation.png"
@@ -171,7 +197,12 @@
                   </div>
                 </div>
               </div>
-              <div class="services-item">
+              <div
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1000"
+                class="services-item"
+              >
                 <div class="services-item__logo-card">
                   <img
                     src="./img/services-section/services-info.png"
@@ -190,7 +221,12 @@
                   </div>
                 </div>
               </div>
-              <div class="services-item">
+              <div
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+                class="services-item"
+              >
                 <div class="services-item__logo-card">
                   <img
                     src="./img/services-section/services-emergency.png"
@@ -213,7 +249,12 @@
                   </div>
                 </div>
               </div>
-              <div class="services-item">
+              <div
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="3000"
+                class="services-item"
+              >
                 <div class="services-item__logo-card">
                   <img
                     src="./img/services-section/services-tracking.png"
@@ -244,13 +285,19 @@
             <div class="row">
               <div class="col-lg-7 col-md-12">
                 <img
+                  data-aos="fade-right"
+                  data-aos-duration="3000"
                   class="w-100"
                   src="./img/info-section/info-section-1.png"
                   alt=""
                 />
               </div>
               <div class="my-auto offset-lg-1 col-lg-4 col-md-12">
-                <div class="section-info__inner">
+                <div
+                  data-aos="fade-left"
+                  data-aos-duration="3000"
+                  class="section-info__inner"
+                >
                   <div class="section-heading">
                     <h2 class="section-heading__title">
                       Leading healthcare providers
@@ -279,7 +326,11 @@
           <div class="row">
             <div class="section-info_reverse">
               <div class="my-auto offset-lg-1 col-lg-4 col-md-12">
-                <div class="section-info__inner">
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="3000"
+                  class="section-info__inner"
+                >
                   <div class="section-heading">
                     <h2 class="section-heading__title">
                       Download our mobile apps
@@ -311,6 +362,8 @@
               </div>
               <div class="text-end offset-lg-1 col-lg-6 col-md-12">
                 <img
+                  data-aos="fade-left"
+                  data-aos-duration="3000"
                   class="w-100"
                   src="./img/info-section/info-section-2.png"
                   alt=""
@@ -322,92 +375,110 @@
       </section>
       <section class="section-testimonials">
         <div class="container">
-          <div class="swiper">
-            <div class="swiper-wrapper">
-
-          <div class="section-testimonials__decor swiper-slide">
-            <div class="section-heading section-heading_center">
-              <h2 class="section-heading__title_color">
+          <div class="section-testimonials__decor">
+            <div
+              data-aos="flip-up"
+              class="section-heading section-heading_center"
+            >
+              <h2 id="testimonials" class="section-heading__title_color">
                 What our customer are saying
               </h2>
             </div>
-            <div class="testimonials-inner">
-              <div class="testimonials-user">
-                <div class="testimonials-user__box-photo">
-                  <img
-                    src="./img/testimonials-section/testimonials-user__photo.png"
-                    alt=""
-                  />
+            <div class="testimonaials-swiper">
+              <div class="swiper-wrapper">
+                <div
+                  data-aos="flip-dowm"
+                  data-aos-duration="3000"
+                  class="testimonials-inner swiper-slide"
+                >
+                  <div class="testimonials-user">
+                    <div class="testimonials-user__box-photo">
+                      <img
+                        src="./img/testimonials-section/testimonials-user__photo.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="testimonials-data">
+                      <p class="testimonials-data__name">Edward Newgate</p>
+                      <p class="testimonials-data__position">Founder Circle</p>
+                    </div>
+                  </div>
+                  <div class="testimonials-inner__comment-box">
+                    <p class="testimonials-inner__comment-text">
+                      “Our dedicated patient engagement app and web portal allow
+                      you to access information instantaneously (no tedeous
+                      form, long calls, or administrative hassle) and securely”
+                    </p>
+                  </div>
                 </div>
-                <div class="testimonials-data">
-                  <p class="testimonials-data__name">Edward Newgate</p>
-                  <p class="testimonials-data__position">
-                    Founder Circle
-                  </p>
+                <div class="testimonials-inner swiper-slide">
+                  <div class="testimonials-user">
+                    <div class="testimonials-user__box-photo">
+                      <img src="./img/testimonials-section/SWEET.png" alt="" />
+                    </div>
+                    <div class="testimonials-data">
+                      <p class="testimonials-data__name">Shon Johnson</p>
+                      <p class="testimonials-data__position">Gang leader</p>
+                    </div>
+                  </div>
+                  <div class="testimonials-inner__comment-box">
+                    <p class="testimonials-inner__comment-text">
+                      I am the leader of the Grove Street Family gang, My family
+                      is brother Cj, he left the city and returned after 5
+                      years, sister Kendl she meets with Caesar Vialpando is my
+                      friend and earlier he was my enemy, my mother and my
+                      brother Brian were killed by the Ballas, after Cj moved to
+                      live in Liberty City, our gang weakened but Cj returned
+                      and we got back on our feet.
+                    </p>
+                  </div>
+                </div>
+                <div class="testimonials-inner swiper-slide">
+                  <div class="testimonials-user">
+                    <div class="testimonials-user__box-photo">
+                      <img src="./img/testimonials-section/CJ.jpg" alt="" />
+                    </div>
+                    <div class="testimonials-data">
+                      <p class="testimonials-data__name">Carl Johnson</p>
+                      <p class="testimonials-data__position">Gangster</p>
+                    </div>
+                  </div>
+                  <div class="testimonials-inner__comment-box">
+                    <p class="testimonials-inner__comment-text">
+                      “Our dedicated patient engagement app and web portal allow
+                      you to access information instantaneously (no tedeous
+                      form, long calls, or administrative hassle) and securely”
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div class="testimonials-inner__comment-box">
-                <p class="testimonials-inner__comment-text">
-                  “Our dedicated patient engagement app and web portal
-                  allow you to access information instantaneously (no
-                  tedeous form, long calls, or administrative hassle) and
-                  securely”
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="section-testimonials__decor swiper-slide">
-            <div class="section-heading section-heading_center">
-              <h2 class="section-heading__title_color">
-                What our customer are saying
-              </h2>
-            </div>
-            <div class="testimonials-inner">
-              <div class="testimonials-user">
-                <div class="testimonials-user__box-photo">
-                  <img
-                    src="./img/testimonials-section/testimonials-user__photo.png"
-                    alt=""
-                  />
-                </div>
-                <div class="testimonials-data">
-                  <p class="testimonials-data__name">Edward Newgate</p>
-                  <p class="testimonials-data__position">
-                    Founder Circle
-                  </p>
-                </div>
-              </div>
-              <div class="testimonials-inner__comment-box">
-                <p class="testimonials-inner__comment-text">
-                  “Our dedicated patient engagement app and web portal
-                  allow you to access information instantaneously (no
-                  tedeous form, long calls, or administrative hassle) and
-                  securely”
-                </p>
-              </div>
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-pagination"></div>
             </div>
           </div>
         </div>
-       <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-    
-
-      </div>  
-    </div>  
-
       </section>
-      <section class="section-article">
+      <section id="article" class="section-article">
         <div class="container">
           <div class="section-article__decor">
             <div class="section-heading section-heading_center mb-sm">
-              <div class="section-heading__title_center">
+              <div
+                data-aos="fade-up"
+                data-aos-duration="3000"
+                class="section-heading__title_center"
+              >
                 <h2 class="section-heading__title">
                   Check out our latest article
                 </h2>
               </div>
             </div>
-            <div class="article-list mb-sm">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="3000"
+              class="article-list mb-sm"
+            >
               <div class="article-item">
                 <div class="article-item__img">
                   <img
@@ -562,13 +633,15 @@
         </div>
       </div>
     </footer>
+    <script src="./js/jquery-3.6.0.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
+    <script src="./aos-master/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
