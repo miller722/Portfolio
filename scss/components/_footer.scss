@@ -1,6 +1,7 @@
 .footer {
   background: linear-gradient(183.41deg, #67c3f3 -8.57%, #5a98f2 82.96%);
   overflow: hidden;
+  position: relative;
   &__wrapper {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -10,26 +11,6 @@
     @media (max-width: 425px) {
       grid-template-columns: repeat(1, 1fr);
       padding: 25px 10px;
-    }
-    &::before {
-      content: url(/img/decor/decor-element-large.png);
-      position: absolute;
-      right: -60px;
-      top: -70px;
-      pointer-events: none;
-      @media (max-width: 768px) {
-        display: none;
-      }
-    }
-    &::after {
-      content: url(/img/decor/decor-element-large.png);
-      position: absolute;
-      left: -150px;
-      bottom: 10px;
-      pointer-events: none;
-      @media (max-width: 768px) {
-        display: none;
-      }
     }
   }
   &-info {
