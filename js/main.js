@@ -37,13 +37,31 @@ $(document).ready(function () {
   $("#menu").click(function (e) {
     const idAnchor = $(e.target).attr('href')
     e.preventDefault();
-
-    const top = $(idAnchor).offset().top;
-    $("body,html").animate({
-      scrollTop: top - 100
-    }, 200);
-
+    console.log($(".navbar-collapse"))
+    if (idAnchor) {
+      const top = $(idAnchor).offset().top;
+      $("body,html").animate({
+        scrollTop: top - 100
+      }, 200);
+      $(".navbar-collapse").removeClass("show").hide();
+    }   else {
+      // jQuery(".nav-item").closest(".navbar-nav").addClass("navbar-toggler").hide();
+    }
+    
   })
 });
 
 var rellax = new Rellax('.rellax');
+
+// $(document).ready(function() {
+//   $('.nav_link').click(function(event) {
+//       $('.header, .navbar').removeClass('active');
+//       $('body').removeClass('lock')
+//   });
+// });
+
+// jQuery(document).on("click",".nav-item", function(){
+
+//     jQuery(".nav-item").closest(".navbar-nav").removeClass("menu-toggle-open").hide();
+// });
+

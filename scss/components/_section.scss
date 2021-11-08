@@ -3,15 +3,12 @@
     overflow: hidden;
     padding-bottom: 200px;
     padding-top: 200px;
-    position: relative;
-   
-   
+    position: relative;   
     @media (max-width: 768px) {
       text-align: center;
     }
     @media (max-width: 425px) {
       padding-bottom: 50px;
-      padding-top: 50px;
     }
   }
   &-services {
@@ -91,7 +88,7 @@
       font-size: 36px;
       color: #000000;
       @media (max-width: 425px) {
-        font-size: 18px;
+        font-size: 24px;
        }
       &:after {
         content: "";
@@ -113,7 +110,7 @@
         font-size: 36px;
         color: $white;
         @media (max-width: 425px) {
-          font-size: 18px;
+          font-size: 24px;
          }
         &:after {
           content: "";
@@ -138,7 +135,7 @@
       font-size: 18px;
       color: #7d7987;
       @media (max-width: 425px) {
-        font-size: 14px;
+        font-size: 16px;
        }
       &_center {
         font-weight: 300;
@@ -147,7 +144,7 @@
         text-align: center;
         color: #7d7987;
         @media (max-width: 425px) {
-          font-size: 14px;
+          font-size: 16px;
          }
       }
     }
