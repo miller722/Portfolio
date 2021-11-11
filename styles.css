@@ -663,7 +663,7 @@ ul {
 }
 .rellax-services__two {
   position: absolute;
-  top: 4%;
+  top: 24%;
   right: 6%;
   z-index: -1;
 }
@@ -674,77 +674,77 @@ ul {
 }
 .rellax-info {
   position: absolute;
-  top: -30%;
+  top: 30%;
   right: 10%;
-  z-index: 1;
+  z-index: -1;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .rellax-info {
     display: none;
   }
 }
 .rellax-testimonials__one {
   position: absolute;
-  top: 1%;
-  left: 15%;
+  top: 120%;
+  left: 1%;
   z-index: 1;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .rellax-testimonials__one {
     display: none;
   }
 }
 .rellax-testimonials__two {
   position: absolute;
-  top: -40%;
-  right: 10%;
+  top: 60%;
+  right: 5%;
   z-index: 1;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .rellax-testimonials__two {
     display: none;
   }
 }
 .rellax-article__one {
   position: absolute;
-  top: 3%;
-  left: 10%;
+  top: 60%;
+  left: 1%;
   z-index: -1;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .rellax-article__one {
     display: none;
   }
 }
 .rellax-article__two {
   position: absolute;
-  top: -60%;
-  right: 30%;
+  top: 45%;
+  right: -5%;
   z-index: -1;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .rellax-article__two {
     display: none;
   }
 }
 .rellax-footer__one {
   position: absolute;
-  top: 3%;
-  left: 35%;
+  top: 50%;
+  left: -2%;
   z-index: 1;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .rellax-footer__one {
     display: none;
   }
 }
 .rellax-footer__two {
   position: absolute;
-  top: -60%;
-  right: 40%;
+  top: -46%;
+  right: 1%;
   z-index: 1;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .rellax-footer__two {
     display: none;
   }
